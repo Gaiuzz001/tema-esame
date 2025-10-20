@@ -1,0 +1,128 @@
+{
+	"customTemplates": [
+		{
+			"name": "wp-custom-template-pagina-prodotto",
+			"postTypes": [
+				"page"
+			],
+			"title": "Pagina Prodotto"
+		},
+		{
+			"name": "wp-custom-template-landing-page",
+			"postTypes": [
+				"page"
+			],
+			"title": "PIPPO"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#0073aa",
+					"name": "Blu Primario",
+					"slug": "primary"
+				},
+				{
+					"color": "#005177",
+					"name": "Blu Scuro",
+					"slug": "secondary"
+				},
+				{
+					"color": "#f0b429",
+					"name": "Accento",
+					"slug": "accent"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Bianco",
+					"slug": "white"
+				},
+				{
+					"color": "#000000",
+					"name": "Nero",
+					"slug": "black"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1200px"
+		},
+		"spacing": {
+			"blockGap": "1.5rem",
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"%"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Open Sans, sans-serif",
+					"name": "Open Sans",
+					"slug": "open-sans"
+				},
+				{
+					"fontFamily": "Merriweather, serif",
+					"name": "Merriweather",
+					"slug": "merriweather"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Piccolo",
+					"size": "14px",
+					"slug": "small"
+				},
+				{
+					"name": "Normale",
+					"size": "16px",
+					"slug": "normal"
+				},
+				{
+					"name": "Grande",
+					"size": "24px",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Grande",
+					"size": "36px",
+					"slug": "x-large"
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#ffffff",
+			"text": "#222222"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--merriweather)",
+					"fontWeight": "700"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--open-sans)",
+			"fontSize": "var(--wp--preset--font-size--normal)",
+			"lineHeight": "1.6"
+		}
+	},
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
+}
