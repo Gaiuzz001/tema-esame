@@ -18,31 +18,23 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"custom": false,
+			"customGradient": false,
 			"palette": [
 				{
-					"color": "#0073aa",
-					"name": "Blu Primario",
-					"slug": "primary"
+					"color": "#ece4db",
+					"name": "Beige Chiaro",
+					"slug": "beige-chiaro"
 				},
 				{
-					"color": "#005177",
-					"name": "Blu Scuro",
-					"slug": "secondary"
+					"color": "#9b8aa5",
+					"name": "Viola",
+					"slug": "viola"
 				},
 				{
-					"color": "#f0b429",
-					"name": "Accento",
-					"slug": "accent"
-				},
-				{
-					"color": "#ffffff",
-					"name": "Bianco",
-					"slug": "white"
-				},
-				{
-					"color": "#000000",
-					"name": "Nero",
-					"slug": "black"
+					"color": "#333333",
+					"name": "Testo Scuro",
+					"slug": "testo-scuro"
 				}
 			]
 		},
@@ -51,7 +43,6 @@
 			"wideSize": "1200px"
 		},
 		"spacing": {
-			"blockGap": "1.5rem",
 			"units": [
 				"px",
 				"em",
@@ -62,49 +53,160 @@
 		"typography": {
 			"fontFamilies": [
 				{
-					"fontFamily": "Open Sans, sans-serif",
-					"name": "Open Sans",
-					"slug": "open-sans"
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Montserrat/montserrat-v31-latin-regular.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/Montserrat/montserrat-v31-latin-600.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/Montserrat/montserrat-v31-latin-600italic.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Montserrat/montserrat-v31-latin-700.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Montserrat/montserrat-v31-latin-700italic.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/Montserrat/montserrat-v31-latin-800.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/Montserrat/montserrat-v31-latin-800italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Montserrat, sans-serif",
+					"name": "Montserrat",
+					"slug": "montserrat"
 				},
 				{
-					"fontFamily": "Merriweather, serif",
-					"name": "Merriweather",
-					"slug": "merriweather"
-				}
-			],
-			"fontSizes": [
-				{
-					"name": "Piccolo",
-					"size": "14px",
-					"slug": "small"
-				},
-				{
-					"name": "Normale",
-					"size": "16px",
-					"slug": "normal"
-				},
-				{
-					"name": "Grande",
-					"size": "24px",
-					"slug": "large"
-				},
-				{
-					"name": "Extra Grande",
-					"size": "36px",
-					"slug": "x-large"
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Nunito/nunito-sans-v19-latin-regular.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/Nunito/nunito-sans-v19-latin-600.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/Nunito/nunito-sans-v19-latin-600italic.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Nunito/nunito-sans-v19-latin-700.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Nunito/nunito-sans-v19-latin-700italic.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/Nunito/nunito-sans-v19-latin-800.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Nunito Sans",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/Nunito/nunito-sans-v19-latin-800italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Nunito Sans, sans-serif",
+					"name": "Nunito Sans",
+					"slug": "nunito-sans"
 				}
 			]
 		}
 	},
 	"styles": {
 		"color": {
-			"background": "#ffffff",
-			"text": "#222222"
+			"background": "var(--wp--preset--color--beige-chiaro)",
+			"text": "var(--wp--preset--color--testo-scuro)"
 		},
 		"elements": {
 			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--viola)"
+				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--merriweather)",
+					"fontFamily": "var(--wp--preset--font-family--montserrat)",
 					"fontWeight": "700"
 				}
 			},
@@ -118,9 +220,8 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--open-sans)",
-			"fontSize": "var(--wp--preset--font-size--normal)",
-			"lineHeight": "1.6"
+			"fontFamily": "var(--wp--preset--font-family--nunito-sans)",
+			"fontSize": "1.125rem"
 		}
 	},
 	"version": 3,
