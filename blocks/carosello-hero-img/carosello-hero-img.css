@@ -1,0 +1,117 @@
+/**
+ * Stili per il Blocco Carosello Hero Img
+ *
+ * NOTA: Questo file viene caricato automaticamente
+ * grazie alla definizione nel block.json.
+ */
+
+/* * 1. Contenitore Principale
+ * -------------------------------------------
+ * Impostiamo "position: relative" per permettere 
+ * ai pulsanti (position: absolute) di posizionarsi
+ * correttamente al suo interno.
+ */
+.carosello-hero-img {
+    position: relative;
+    /* Evita overflow strani durante il caricamento */
+    overflow: hidden;
+}
+
+/* * 2. Stile delle Slide e delle Immagini (Fix Dimensioni)
+ * -------------------------------------------
+ * Qui forziamo un'altezza specifica per tutte le slide
+ * e usiamo object-fit sull'immagine per riempire 
+ * quello spazio senza distorsioni.
+ */
+.carosello-hero-img .carosello-slide {
+    /* * IMPOSTA L'ALTEZZA DESIDERATA QUI 
+     * Visto che la colonna è max 400px (50% di 800px), 
+     * un'altezza di 300px crea un buon aspect-ratio 4:3.
+     * Modifica questo valore a tuo piacimento.
+     */
+    display: flex;
+    align-content: center;
+    height: 600px; 
+}
+
+.carosello-hero-img .carosello-slide img {
+    /* L'immagine riempie il 100% della slide */
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    
+    /* * Questa è la proprietà chiave!
+     * 'cover' = ritaglia l'immagine per riempire lo spazio (come background-size: cover)
+     * 'contain' = rimpicciolisce l'immagine per starci dentro (lasciando bande nere)
+     * Scegli 'cover' per un aspetto pieno.
+     */
+    object-fit: cover;
+    display: block;
+}
+
+/* * 3. Stile e Posizionamento Frecce (Fix Layout)
+ * -------------------------------------------
+ * Sovrascriviamo lo stile base di Slick
+ * per trasformare i pulsanti in frecce sovrapposte.
+ */
+.carosello-hero-img .slick-arrow {
+    /* Posizionamento assoluto */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Le mette sopra l'immagine */
+    
+    /* Reset dello stile base */
+    background: rgba(255, 255, 255, 0.7); /* Sfondo bianco semi-trasparente */
+    border: none;
+    border-radius: 50%; /* Le rende rotonde */
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    
+    /* Rimuove il testo "previous" / "next" */
+    font-size: 0;
+    line-height: 0;
+}
+
+.carosello-hero-img .slick-arrow:hover {
+    background: rgba(255, 255, 255, 1); /* Opacità piena in hover */
+}
+
+/* Aggiungiamo le icone "freccia" usando un trucco CSS */
+.carosello-hero-img .slick-arrow::before {
+    content: '';
+    display: block;
+    width: 10px; /* Larghezza della freccia */
+    height: 10px; /* Altezza della freccia */
+    
+    /* Crea la freccia con i bordi */
+    border-top: 2px solid #333; 
+    border-right: 2px solid #333;
+    
+    /* Centra la freccia nel pulsante */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* Posiziona la freccia "indietro" (prev) */
+.carosello-hero-img .slick-prev {
+    left: 15px; /* Distanza dal bordo sinistro */
+}
+
+.carosello-hero-img .slick-prev::before {
+    /* Ruota la freccia e la sposta al centro */
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+/* Posiziona la freccia "avanti" (next) */
+.carosello-hero-img .slick-next {
+    right: 15px; /* Distanza dal bordo destro */
+}
+
+.carosello-hero-img .slick-next::before {
+    /* Ruota la freccia e la sposta al centro */
+    transform: translate(-50%, -50%) rotate(45deg);
+}

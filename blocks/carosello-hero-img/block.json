@@ -1,0 +1,31 @@
+{
+    "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+    "apiVersion": 2,
+    "name": "acf/carosello-hero-img",
+    "title": "Carosello immagini",
+    "description": "Un blocco custom per poter mostrare un carosello di immagini",
+    "style": [ 
+        "slick",
+        "file:./carosello-hero-img.css"
+    ],
+    "script": [
+        "slick",
+        "carosello-hero-img"
+    ],
+    "category": "widgets",
+    "icon": "",
+    "keywords": [
+        "Carosello", 
+        "immagini",
+        "slider",
+        "gallery"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "carosello-hero-img.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": false
+    }
+}

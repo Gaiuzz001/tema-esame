@@ -1,11 +1,10 @@
-<!-- wp:template-part {"slug":"header"} /-->
-
-<!-- wp:post-content /-->
-
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
-
+<?php
+/**
+ * Title: Carosello + descrizione per pagine prodotto
+ * Slug: /carosello-descrizione-per-pagine-prodotto
+ * Categories: 
+ */
+?>
 <!-- wp:group {"metadata":{"name":"sezione hero"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
@@ -27,5 +26,3 @@
 <h2 class="wp-block-heading"></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer"} /-->
