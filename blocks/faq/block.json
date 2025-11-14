@@ -1,0 +1,27 @@
+{
+    "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+    "apiVersion": 2,
+    "name": "acf/faq",
+    "title": "FAQ",
+    "description": "Mostra le FAQ in un layout a fisarmonica.",
+    "style": [ 
+        "file:./faq.css"
+    ],
+    "script": [
+        "faq"
+    ],
+    "category": "widgets",
+    "icon": "",
+    "keywords": [
+        "FAQ", 
+        "Domande Frequenti"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "faq.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": false
+    }
+}

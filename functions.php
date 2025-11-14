@@ -75,6 +75,7 @@ add_action( 'wp_enqueue_scripts', 'theme_assets' );
 if ( class_exists( 'acf' ) ) {
     function register_acf_blocks() {
         register_block_type( __DIR__ . '/blocks/carosello-hero-img' );
+        register_block_type( __DIR__ . '/blocks/faq' );
     }
     add_action( 'init', 'register_acf_blocks' );
 }
