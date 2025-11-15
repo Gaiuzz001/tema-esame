@@ -62,6 +62,16 @@ function theme_assets() {
         '1.0',
         true
     );
+    // --- AGGIUNGI QUESTO BLOCCO ---
+    // Registra lo script del blocco FAQ
+    wp_register_script(
+        'faq', // L'handle 'faq' che corrisponde al tuo block.json
+        get_stylesheet_directory_uri() . '/blocks/faq/faq.js', // Il percorso al tuo file
+        array( 'jquery' ), // ESSENZIALE: Il tuo script usa jQuery ($)
+        '1.0', // La tua versione
+        true // Carica nel footer
+    );
+    // --- FINE BLOCCO DA AGGIUNGERE ---
 }
 add_action( 'wp_enqueue_scripts', 'theme_assets' );
 
